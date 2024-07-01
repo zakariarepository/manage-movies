@@ -1,0 +1,19 @@
+<div class="d-flex justify-content-center">
+  <div class="card" style="width: 18rem; margin-top: 2.5rem;">
+    <img src="{{film.poster_path}}" class="card-img-top" alt="..." (click)="clickFilm()">
+    <div class="card-body">
+      <div class="d-flex justify-content-between">
+        <h5 class="card-title" style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis; max-width: 150px">{{film.title}}</h5>
+        <p class="card-text">{{film.original_language}} DH</p>
+      </div>
+      <p style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis; max-width: 230px">{{film.overview}}</p>
+      <div class="d-flex justify-content-between">
+        <button *ngIf="true" class="btn btn-primary w-50" >Watch Now</button>
+       <!-- <span class="p-lg-2 rounded-2" [ngStyle]="{backgroundColor: getColor()}" style="color: white">{{getDisponibilite()}}</span>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
